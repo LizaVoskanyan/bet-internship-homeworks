@@ -1,11 +1,8 @@
 
 function findingName(str){
   
-	var obj = '[object ';
-	var len = obj.length;
-	var strLen = str.length;
-	if(str.includes(obj)){
-	  return  str.substring( len - 1 , strLen -1  );
+	if(str.includes('[object ')){
+	  return  str.substring( 8 , str.length -1  );
 	  }   
 	else   { return "somthing goes wrong"; }
 }
