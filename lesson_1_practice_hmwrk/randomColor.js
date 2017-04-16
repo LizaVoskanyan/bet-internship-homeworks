@@ -1,8 +1,9 @@
 function randomColor() {
-    var letters = '0123456789ABCDEF';
-    var color = '#';
-    for (var i = 0; i < 6; i++ ) {
-        color += letters[Math.floor(Math.random() * 16)];
+    function s4() { 
+
+        return  Math.floor((1 + Math.random()) * 0x10000).toString(16)
+        .substring(2);
     }
-    return color;
+     return '#'+s4() + s4() ;
 }
+randomColor();
