@@ -27,9 +27,5 @@
         var arithmeticalMean = calculator.division(sum, n);
         return arithmeticalMean;
     }
-
-
-
-    console.log(arithmeticalMean(5));
-
+    console.log(arithmeticalMean(5)); 
 })();
