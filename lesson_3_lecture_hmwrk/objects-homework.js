@@ -10,9 +10,6 @@ var accident = {
         return info;
     },
     hasInfo: function( information) {
-        for (information in accident) {
-            return true;
-        }
     }
 };
 var AviationAccident = Object.create(accident);
