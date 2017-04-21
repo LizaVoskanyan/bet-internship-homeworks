@@ -1,7 +1,3 @@
 function randomColor() {
-    function s4() { 
-        return  Math.floor((1 + Math.random()) * 0x10000).toString(16)
-        .substring(2);
-    }
-     return '#'+s4() + s4() ;
+  return  Math.floor((1 + Math.random()) * 0xffffff).toString(16).slice(1);
 }
