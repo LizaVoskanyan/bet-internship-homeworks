@@ -6,7 +6,7 @@ var accident = {
     toString: function() {
         console.log('The crash happened on ', date.toDateString());
         console.log('Reason ', reason);
-        console.log('There were damanged ', numberOfDamagedPeople, 'people';)
+        console.log('There were damanged ', numberOfDamagedPeople, 'people');
     },
     hasInfo: function( information) {
         for (information in accident) {
@@ -16,7 +16,7 @@ var accident = {
 };
 var AviationAccident = Object.create(accident);
 AviationAccident.altitude = null;
-AviationAccident.listOfTransportation = function(AviationAccident){
+AviationAccident.listOfTransportation = function(AviationAccident) {
     //checking valid lists
 };
 
@@ -41,6 +41,6 @@ function Car(model, year) {
 function Plane(model, year) {
     this.model = model;
 }
-fucntion Country(name){
+fucntion Country(name) {
     this.name = name;
 }
