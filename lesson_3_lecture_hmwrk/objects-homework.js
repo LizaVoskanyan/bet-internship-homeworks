@@ -1,14 +1,14 @@
 var accident = {
-    date : null,
+    date: null,
     listOfTransportation: null,
-    numberOfDamagedPeople : null,
-    reason : 'The accident happened because the driver of Fiat was drunk.',
-    toString : function() {
+    numberOfDamagedPeople: null,
+    reason: 'The accident happened because the driver of Fiat was drunk.',
+    toString: function() {
         console.log('The crash happened on ', date.toDateString());
         console.log('Reason ', reason);
         console.log('There were damanged ', numberOfDamagedPeople, 'people';)
     },
-    hasInfo : function( information) {
+    hasInfo: function( information) {
         for (information in accident) {
             return true;
         }
