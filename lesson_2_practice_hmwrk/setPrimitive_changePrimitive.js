@@ -1,17 +1,12 @@
-(function(){
-    window.setPrimitive = function(obj , primitive){
-        obj.valueOf = function(){
-            return primitive;
-        }
+(function() {
+    var valueOf = function() {
+        return this.primitive; // я не поняла зачем мы ввели случайность 
     }
-    window.changePrimitive = function(obj , primitive){
-        obj.valueOf = function(){
-            return primitive;
-        }
+    window.setPrimitive = function(obj, primitive) {
+        obj["primitive"] = primitive;
+        obj.valueOf = valueOf;
+    }
+    window.changePrimitive = function(obj, primitive) {
+        obj.valueOf = valueOf;
     }
 })();
-var a = {};
-setPrimitive(a, 4);
-a.valueOf(); // should return 4
-changePrimitive(a, 'hello');
-a.valueOf(); // should return 'hello'
