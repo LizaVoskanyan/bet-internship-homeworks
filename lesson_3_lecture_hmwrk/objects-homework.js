@@ -4,9 +4,10 @@ var accident = {
     numberOfDamagedPeople: null,
     reason: 'The accident happened because the driver of Fiat was drunk.',
     toString: function() {
-        console.log('The crash happened on ', date.toDateString());
-        console.log('Reason ', reason);
-        console.log('There were damanged ', numberOfDamagedPeople, 'people');
+        var info ='The crash happened on '+ date.toDateString()+\n
+        +'Reason '+ reason +\n
+        +'There were damanged '+ numberOfDamagedPeople + 'people';
+        return info;
     },
     hasInfo: function( information) {
         for (information in accident) {
