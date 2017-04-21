@@ -42,6 +42,7 @@
         diffDate.seconds = seconds > 0 ? seconds : 0;
         return diffDate;
     }
+    
     if (typeof define === "function" && define.amd) {
         define(function() {
             return datediff;
@@ -51,5 +52,4 @@
     } else {
         global.datediff = datediff;
     }
-
 })(this);
