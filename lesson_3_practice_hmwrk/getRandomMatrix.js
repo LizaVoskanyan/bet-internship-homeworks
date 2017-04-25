@@ -1,16 +1,18 @@
 (function() {
     'use strict';
-    function getRandomInt() {
-        return Math.round(Math.random() * 100);
+    function getRandomArray(size) {
+        var arr = new Array(size);
+        for(var i = 0; i < size; i++) {
+            arr[i] = getRandomInt(100);
+        }
     }
+
     function getRandomMatrix(n, m) {
-        var arr = new Array();
-        for (var i = 0; i < m; i++) {
-            arr[i] = [];
-            for (var j = 0; j < n; j++) {
-                arr[i][j] = getRandomInt();
-            }
+        var arr = new Array(n);
+        for (var i = 0; i < n; i++) {
+            arr[i] = getRandomArray(m);
         }
         return arr;
     }
+    window.getRandomMatrix = getRandomMatrix;
 })();
