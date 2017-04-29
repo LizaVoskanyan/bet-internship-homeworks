@@ -1,6 +1,6 @@
 (function() {
     'use strict';
-    window.reduce() = function(array, callback) {
+    window.reduce = function(array, callback) {
         if(typeof callback !== 'function') {
             throw new TypeError();
         }
