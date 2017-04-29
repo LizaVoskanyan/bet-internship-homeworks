@@ -1,6 +1,6 @@
 (function() {
     'use strict';
-    window.map() = function(array, func) {
+    window.map = function(array, func) {
         if(typeof funct !== 'function') {
             throw new TypeError();
         }
