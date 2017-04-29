@@ -1,6 +1,6 @@
 (function() {
     'use strict';
-    window.filter() = function(array, func) {
+    window.filter = function(array, func) {
         if(typeof callback !== 'function') {
             throw new TypeError();
         }
