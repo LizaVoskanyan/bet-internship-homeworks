@@ -1,6 +1,6 @@
 (function() {
     'use strict';
-    window.forEach() = function(array, callback) {
+    window.every = function(array, callback) {
         if(typeof callback !== 'function') {
             throw new TypeError;
         }
