@@ -1,6 +1,6 @@
 (function() {
     'use strict';
-    window.some() = function(array, func) {
+    window.some = function(array, func) {
         if(typeof func !== 'function') {
             throw new TypeError();
         }
